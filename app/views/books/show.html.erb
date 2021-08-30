@@ -1,0 +1,8 @@
+<div class="book-body">
+  <p><%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %></p>
+  <p>title：<%= @book.title %></p>
+  <p>Opinion：<%= @book.body %></p>
+  <% if @book.user == current_user %>
+    <%= link_to "削除", book_path(@book), method: :delete %>
+  <% end %>
+</div>
