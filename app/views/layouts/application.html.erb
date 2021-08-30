@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bookers2</title>
+    <title>Bookers</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,7 +13,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <%= Bookers2 %>
+          <%= link_to 'Bookers', root_path, class:"navbar-brand"%>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <% if user_signed_in? %>
             <ul class="navbar-nav ml-auto">
